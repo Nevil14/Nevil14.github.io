@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("BG.jpg");
+}
+.Box {
+  width: 300px;
+  padding: 50px;
+
+  margin: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*Transform : translate to  Move Objects*/
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
+.Box h1 {
+  color: white;
+  font-weight: 200;
+}
+/*this class will edit The the Typing Space of Username and Password */
+.Box input[type="text"],
+.Box input[type="password"] {
+  border: 0px;
+  background: none;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  border: 2px solid #0081fa;
+  padding: 10px 6px;
+  width: 200px;
+  color: antiquewhite;
+  border-radius: 50px;
+  /*Transition is used to change the state of element It will be use 
+  to change box size and color while focusinh*/
+  transition: 0.15s;
+}
+/*Changes to be done While Focusing*/
+.Box input[type="text"]:focus,
+.Box input[type="password"]:focus {
+  width: 310px;
+  border-color: rgb(3, 248, 3);
+}
+.Box input[type="submit"] {
+  border: 0px;
+  background: none;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  border: 2px solid rgb(3, 248, 3);
+  padding: 10px 40px;
+
+  color: antiquewhite;
+  border-radius: 50px;
+  transition: 0.15s;
+  /*To change cursor*/
+  cursor: pointer;
+}
+.Box input[type="submit"]:hover {
+  background: rgb(3, 248, 3);
+  text-align: center;
+}
+.Forgot:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+.Forgot {
+  text-align: left;
+  color: #0081fa;
+  margin-right: auto;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.Register {
+  text-align: Right;
+  color: #0081fa;
+
+  text-decoration: none;
+}
+.Register:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+label {
+  color: #0081fa;
+}

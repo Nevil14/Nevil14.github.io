@@ -1,0 +1,39 @@
+body {
+  background: #dedede;
+}
+.Navigation {
+  background-color: grey;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  aspangn-items: center;
+  min-height: 100%;
+}
+.Navigation div {
+  padding: 10px;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+
+  width: auto;
+  height: auto;
+}
+.Navigation div span {
+  background: wheat;
+
+  margin: 0 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.SubCat {
+  position: absolute;
+  border: 2px solid Black;
+  top: 40px;
+  left: 20px;
+}
+.Navigation div span:hover {
+  background: greenyellow;
+}

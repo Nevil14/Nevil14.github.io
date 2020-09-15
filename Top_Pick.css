@@ -1,0 +1,552 @@
+.Heading {
+  position: absolute;
+  top: 21%;
+  left: 0;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  height: 4%;
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+}
+.Heading .Line {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 2px solid black;
+  width: 504%;
+  background: black;
+}
+/*Center Shoe card CSS*/
+
+.Container {
+  position: relative;
+  top: 100%;
+}
+.Container .Card {
+  position: relative;
+  top: 40px;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.Container .Card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 65% 5%);
+  transition-duration: 2s;
+}
+.Container .Card:hover::before {
+  clip-path: circle(300px at 65% -38%);
+}
+.Container .Card::after {
+  content: "Nike";
+  position: absolute;
+  top: 25%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+.Container .Card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 100%;
+  height: 500px;
+  transition: 0.5s;
+}
+.Container .Card:hover .imgBx {
+  top: 0;
+  transform: translateY(-20%);
+}
+
+.Container .Card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(25deg);
+  width: 270px;
+}
+.Container .Card .contentBx {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+
+  text-align: center;
+
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  z-index: 10;
+}
+.Container .Card:hover .contentBx {
+  height: 150px;
+}
+.Container .Card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.Container .Card .contentBx .size,
+.Container .Card .contentBx .Color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.Container .Card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.Container .Card:hover .contentBx .Color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.Container .Card .contentBx .size h3,
+.Container .Card .contentBx .Color h3 {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.Container .Card .contentBx .size .SNo {
+  width: 26px;
+  height: 26px;
+  border: 1px solid black;
+
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition-duration: 0.5s;
+  color: #111;
+  cursor: pointer;
+}
+.Container .Card .contentBx .size .SNo:hover {
+  background: #9bdc28;
+}
+.Container .Card .contentBx .Color span {
+  height: 20px;
+  width: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.Container .Card .contentBx .Color span:nth-child(2) {
+  background: #9bdc28;
+}
+.Container .Card .contentBx .Color span:nth-child(3) {
+  background: #03a9f4;
+}
+.Container .Card .contentBx .Color span:nth-child(4) {
+  background: #e91e63;
+}
+.Container .Card .contentBx a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 4px;
+  padding: 6px 20px;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+
+  transition: 0.5s;
+}
+.Container .Card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.74s;
+}
+
+/*Watches Card Left*/
+
+.ContainerL {
+  position: relative;
+  left: -120%;
+  top: -450px;
+}
+.ContainerL .CardL {
+  position: absolute;
+  top: 40px;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.ContainerL .CardL::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c7c5c6;
+  clip-path: circle(150px at 65% 5%);
+  transition-duration: 2s;
+}
+.ContainerL .CardL:hover::before {
+  clip-path: circle(300px at 65% -38%);
+}
+.ContainerL .CardL::after {
+  content: "Rolex";
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  font-size: 8em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+.ContainerL .CardL .imgBxL {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 100%;
+  height: 500px;
+  transition: 0.5s;
+}
+.ContainerL .CardL:hover .imgBxL {
+  top: 0;
+  transform: translateY(-17%);
+}
+.ContainerL .CardL .imgBxL img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+}
+.ContainerL .CardL .contentBxL {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+
+  text-align: center;
+
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  z-index: 10;
+}
+.ContainerL .CardL:hover .contentBxL {
+  height: 130px;
+}
+.ContainerL .CardL .contentBxL h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.ContainerL .CardL .contentBxL .typeL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.ContainerL .CardL .contentBxL .ColorL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.ContainerL .CardL:hover .contentBxL .typeL {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.ContainerL .CardL:hover .contentBxL .ColorL {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.ContainerL .CardL .contentBxL .typeL h3 {
+  font-weight: 300;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.ContainerL .CardL .contentBxL .ColorL h3 {
+  font-weight: 300;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.ContainerL .CardL .contentBxL .typeL .SNoL {
+  width: 50px;
+  height: 26px;
+  border: 1px solid black;
+
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition-duration: 0.5s;
+  color: #111;
+  cursor: pointer;
+}
+.ContainerL .CardL .contentBxL .typeL .SNoL:hover {
+  background: #9bdc28;
+}
+.ContainerL .CardL .contentBxL .ColorL span {
+  height: 17px;
+  width: 17px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.ContainerL .CardL .contentBxL .ColorL span:nth-child(2) {
+  background: #000000;
+}
+.ContainerL .CardL .contentBxL .ColorL span:nth-child(3) {
+  background: #016594;
+}
+.ContainerL .CardL .contentBxL .ColorL span:nth-child(4) {
+  background: #c7c5c6;
+}
+.ContainerL .CardL .contentBxL a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin-top: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+
+  transition: 0.5s;
+}
+.ContainerL .CardL:hover .contentBxL a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.74s;
+}
+/*Headphones Right*/
+
+.ContainerR {
+  position: relative;
+  left: 120%;
+  top: -450px;
+}
+.ContainerR .CardR {
+  position: absolute;
+  top: 40px;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ContainerR .CardR::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(47, 47, 221);
+  clip-path: circle(150px at 65% 5%);
+  transition-duration: 2s;
+}
+.ContainerR .CardR:hover::before {
+  clip-path: circle(300px at 65% -38%);
+}
+.ContainerR .CardR::after {
+  content: "Rolex";
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  font-size: 8em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+.ContainerR .CardR .imgBxR {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 100%;
+  height: 500px;
+  transition: 0.5s;
+}
+.ContainerR .CardR:hover .imgBxR {
+  top: 0;
+  transform: translateY(-17%);
+}
+.ContainerR .CardR .imgBxR img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+}
+.ContainerR .CardR .contentBxR {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+
+  text-align: center;
+
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  z-index: 10;
+}
+.ContainerR .CardR:hover .contentBxR {
+  height: 130px;
+}
+.ContainerR .CardR .contentBxR h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.ContainerR .CardR .contentBxR .ColorR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.Container .Card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.ContainerR .CardR:hover .contentBxR .ColorR {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.ContainerR .CardR .contentBxR .ColorR h3 {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.ContainerR .CardR .contentBxR .ColorR span {
+  height: 20px;
+  width: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.ContainerR .CardR .contentBxR .ColorR span:nth-child(2) {
+  background: gray;
+}
+.ContainerR .CardR .contentBxR .ColorR span:nth-child(3) {
+  background: #062aca;
+}
+.ContainerR .CardR .contentBxR .ColorR span:nth-child(4) {
+  background: red;
+}
+.ContainerR .CardR .contentBxR a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin-top: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.ContainerR .CardR:hover .contentBxR a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.74s;
+}
+/* Responsive*/
+@media screen and (max-width: 1150px) {
+  .Heading {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    height: 4%;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+  }
+  .Heading .Line {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid black;
+    width: 504%;
+    background: black;
+  }
+  .Container {
+    position: relative;
+    top: 60px;
+  }
+  .ContainerL {
+    position: relative;
+    left: 0%;
+    top: 120px;
+  }
+  .ContainerR {
+    position: relative;
+    left: 0%;
+    top: 630px;
+  }
+}
