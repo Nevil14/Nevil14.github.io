@@ -398,11 +398,11 @@
   clip-path: circle(300px at 65% -38%);
 }
 .ContainerR .CardR::after {
-  content: "Rolex";
+  content: "Headphone";
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: -10%;
-  font-size: 8em;
+  font-size: 4em;
   font-weight: 800;
   font-style: italic;
   color: rgba(255, 255, 255, 0.04);
