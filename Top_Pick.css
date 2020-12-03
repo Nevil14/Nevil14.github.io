@@ -400,9 +400,9 @@
 .ContainerR .CardR::after {
   content: "Headphone";
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: -10%;
-  font-size: 4em;
+  font-size: 8em;
   font-weight: 800;
   font-style: italic;
   color: rgba(255, 255, 255, 0.04);

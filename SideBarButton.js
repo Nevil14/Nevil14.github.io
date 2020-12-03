@@ -1,5 +1,6 @@
 //variable which target Menu button
 const menubtn = document.querySelector(".menu-btn");
+console.log(menubtn);
 // Variable to see if menu is open or close or
 //to see if user has click on button or not
 let menuOpen = true;

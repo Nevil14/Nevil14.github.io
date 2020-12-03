@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 /* CSS Document */
 body {
   margin: 0;
@@ -45,7 +45,7 @@ body {
   width: 310px;
   border-color: rgb(3, 248, 3);
 }
-.Box input[type="submit"] {
+.Box button {
   border: 0px;
   background: none;
   display: block;
@@ -60,7 +60,7 @@ body {
   /*To change cursor*/
   cursor: pointer;
 }
-.Box input[type="submit"]:hover {
+.Box button:hover {
   background: rgb(3, 248, 3);
   text-align: center;
 }
@@ -88,4 +88,24 @@ body {
 }
 label {
   color: #0081fa;
+}
+.Control small{
+  color: whitesmoke;
+  visibility: hidden;
+}
+.Control.Error input{
+  border: 1px solid rgb(226, 38, 38);
+}
+.Control.Error small
+{
+  color:rgb(226, 38, 38);
+  visibility: visible;
+}
+.Control.Sucess small
+{
+  color: rgb(84, 223, 84);
+  visibility: visible;
+}
+.Control.Sucess input{
+  border: 2px solid rgb(84, 223, 84);
 }
